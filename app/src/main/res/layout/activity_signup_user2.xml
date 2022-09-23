@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupUser2"
+    android:background="@drawable/background_road">
+
+    <TextView
+        android:id="@+id/signup_imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:textSize="45dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Sign Up" />
+
+    <EditText
+        android:id="@+id/signup_password"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/signup_imageView1"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_input"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:paddingLeft="5dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/signup_confirm_password"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/signup_password"
+        android:layout_alignStart="@id/signup_password"
+        android:layout_alignLeft="@id/signup_password"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_input"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:paddingLeft="5dp"
+        android:textSize="20dp" />
+
+
+    <Button
+        android:id="@+id/submit_signup"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/signup_confirm_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_button"
+        android:elevation="10dp"
+        android:text="Register"
+        android:textColor="@color/black" />
+
+
+</RelativeLayout>
